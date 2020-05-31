@@ -1,19 +1,28 @@
 # Business Need:
 One of the critical functions that we provide is the ability to add employees in our system and manage their
 pay. Given a set of acceptance criteria, please:
+
 ● Write up any bugs found
+
 ● Write up 3 test cases
+
 ● Choose any test case and automate in the tool of your choice
+
 This is of course a contrived example. We want to know how you would test and automate and get a brief
 preview of how you work.
 
 # Assumptions:
+
 ● All employees have a base salary of $2,000 per paycheck
+
 ● There are 26 paychecks in a year
+
 ● Each employee is enrolled in a program from 1 to 3
+
 ● There is a $5,000 per year bonus for employees enrolled in program #1, $10,000 per year bonus for
 employees enrolled in program #2 and $15,000 per year bonus for employees enrolled in program
 #3
+
 ● The bonus amount is integrated in each paycheck
 
 # Test Cases
