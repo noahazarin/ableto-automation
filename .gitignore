@@ -2,7 +2,10 @@
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
-
+app/
+ableto-automation/
+__pycache__
+debug
 # Folder config file
 Desktop.ini
 
@@ -21,3 +24,4 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+*.pdf
