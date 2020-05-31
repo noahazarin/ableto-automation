@@ -31,11 +31,14 @@ class MainPageSmokeTests(unittest.TestCase):
 		homepage = home.HomePage(self.driver)
 		# we're now on a new page, so we instantiate a home page obj, check title
 		self.assertTrue(homepage.is_title_matches())
-		homepage.add_new_employee_1()
-		self.assertTrue(homepage.is_employee_1_matches())
-		# add "employee 1" and check it matches.
-		# in an ideal circumstance i'd probably have a few employe adds and checks
-		# we would want to give them more distinct names in that case, but this is fine for an example
+		homepage.add_new_employee("Bobert")
+		self.assertTrue(homepage.is_employee_matches("2", "Bobert"))
+		# add "employee 1" and check it matches. Then we do it again with the other ones
+		homepage.add_new_employee("James")
+		self.assertTrue(homepage.is_employee_matches("3", "James"))
+		homepage.add_new_employee("Kelly")
+		self.assertTrue(homepage.is_employee_matches("4", "Kelly"))
+		#tests against the different cases in the data and makes sure to look at the correct rows.
 
 	def tearDown(self):
 		"""
